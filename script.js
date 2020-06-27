@@ -59,6 +59,9 @@ function generatePassword() {
     else if (userInput === "n, s") {
       charSet = "0123456789 !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
     }
+    else if (userInput === "u, l, n, s") {
+      charSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+    }
 
     // return value
     var retVal = "";
