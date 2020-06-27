@@ -27,7 +27,7 @@ function generatePassword() {
       charSet = "0123456789";
     }
     else if (userInput === "s") {
-      charSet = " !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+      charSet = " !\#$%&()*+,-./:;<=>?@[\]^_{|}~";
     }
     else if (userInput === "u, l") {
       charSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
@@ -36,31 +36,31 @@ function generatePassword() {
       charSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
     }
     else if (userInput === "u, s") {
-      charSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+      charSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ !\#$%&()*+,-./:;<=>?@[\]^_{|}~";
     }
     else if (userInput === "u, l, n") {
       charSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
     }
     else if (userInput === "u, l, s") {
-      charSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+      charSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz !\#$%&()*+,-./:;<=>?@[\]^_{|}~";
     }
     else if (userInput === "u, n, s") {
-      charSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+      charSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 !\#$%&()*+,-./:;<=>?@[\]^_{|}~";
     }
     else if (userInput === "l, n") {
       charSet = "abcdefghijklmnopqrstuvwxyz0123456789";
     }
     else if (userInput === "l, s") {
-      charSet = "abcdefghijklmnopqrstuvwxyz !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+      charSet = "abcdefghijklmnopqrstuvwxyz !\#$%&()*+,-./:;<=>?@[\]^_{|}~";
     }
     else if (userInput === "l, n, s") {
-      charSet = "abcdefghijklmnopqrstuvwxyz0123456789 !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+      charSet = "abcdefghijklmnopqrstuvwxyz0123456789 !\#$%&()*+,-./:;<=>?@[\]^_{|}~";
     }
     else if (userInput === "n, s") {
-      charSet = "0123456789 !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+      charSet = "0123456789 !\"#$%&()*+,-./:;<=>?@[\]^_{|}~";
     }
     else if (userInput === "u, l, n, s") {
-      charSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+      charSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 !\#$%&()*+,-./:;<=>?@[\]^_{|}~";
     }
 
     // return value
