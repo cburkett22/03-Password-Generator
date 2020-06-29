@@ -9,4 +9,6 @@
 
 - I added "var userInput = charType.toLowerCase();" so that if the user entered an uppercase letter it would auto-correct it to be lowercase and comply with the "userInput".
 
+- Added an alert if the user does not enter anything within the character type prompt.
+
 - Lastly, is the "for" loop and the "return" value. I placed "retVal += charSet.charAt(Math.floor(Math.random() * charSet.length))" within the "for" loop so that it would start as nothing, then take all the userInputs that were selected and then place them in a random order.

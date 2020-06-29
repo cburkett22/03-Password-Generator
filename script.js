@@ -27,6 +27,11 @@ function generatePassword() {
     var charSet = "";
     var userInput = charType.toLowerCase();
 
+    if (userInput === "") {
+      alert("Please enter u, l, n, or s!");
+      return generatePassword();
+    }
+
     if (userInput === "u") {
       charSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     }
