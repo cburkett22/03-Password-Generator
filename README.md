@@ -1,48 +1,12 @@
 # 03 JavaScript: Password Generator
+- Wrapped everything within the "generatePassword()" function.
 
-Create an application that generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
+- Placed the first prompt "length" inside the function so that it starts after the button is clicked because I did not want it to prompt when the page loads.
 
-If you are unfamiliar with special characters, take a look at [some examples](https://www.owasp.org/index.php/Password_special_characters).
+- First "if" conditional is there to alert the user if they enter a number less than 8 or greater than 128. Finished it with a "return" conditional so that it would start the "generatePassword()" function over with the original prompt.
 
-## User Story
+- Everything else is wrapped in an "else if" conditional for valid number inputs between 8 and 128.
 
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
+- I added "var userInput = charType.toLowerCase();" so that if the user entered an uppercase letter it would auto-correct it to be lowercase and comply with the "userInput".
 
-## Acceptance Criteria
-
-```
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN prompted for character types to include in the password
-THEN I choose lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-```
-
-The following image demonstrates the application functionality:
-
-![password generator demo](./Assets/03-javascript-homework-demo.png)
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+- Lastly, is the "for" loop and the "return" value. I placed "retVal += charSet.charAt(Math.floor(Math.random() * charSet.length))" within the "for" loop so that it would start as nothing, then take all the userInputs that were selected and then place them in a random order.
